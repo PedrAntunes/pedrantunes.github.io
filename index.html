@@ -1,1 +1,78 @@
-Hello world
+<!doctype html>
+<html lang="pt-br">
+    
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Movimentos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <link href="assets/css/custom_scrollbar.css" rel="stylesheet">
+    <link href="assets/fontawesome-6.1.1/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!---navbar--->
+    <nav id="navbar" class="navbar navbar-expand-lg bg-primary"></nav>
+
+    <!---GET PAGINA--->
+    <section id="get-pag" class="mt-5"></section>
+    
+
+    <!---CORE--->
+    <script src="assets/jquery/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+    <!--PAGES MANAGER-->
+    <script>
+      //Ao carregar o documento, 
+      $(document).ready(function() {
+        //carrega a navbar
+        $("#navbar").load("assets/html/navbar.html");
+
+        //salva todos os elementos da navbar num array
+        $pages = ["#home", "#lista_movimentos"];
+
+        //mostra a home do site
+        currentPageId = "lista_movimentos";
+        $("#get-pag").load(currentPageId+".html");
+      });
+
+      //Remove a class "active" de todos os links da navbar
+      function ResetPages()
+      {
+        $.each($pages, function(index, page)
+        {
+          $(page).removeClass("active");
+        });
+      }
+
+      //Adiciona a class "active" num link da navbar passado por parametro
+      function ActivePage(page)
+      {
+        $("#"+page).addClass("active");
+      }
+      
+      //Gerencia a troca de paginas do site
+      function LoadPage(page)
+      {
+        page_id = page.id;
+
+        //retorna, se a pagina para ser carregada for a mesma
+        if(page_id == currentPageId) return;
+
+        //salva o id da nova pagina
+        currentPageId = page_id;
+
+        ResetPages();
+        ActivePage(page_id);
+
+        //carrega o html da pagina
+        $("#get-pag").load(page_id+".html");
+      }
+    </script>
+
+</body>
+</html>
