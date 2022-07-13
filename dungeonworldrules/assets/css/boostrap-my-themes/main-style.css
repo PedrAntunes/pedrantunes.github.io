@@ -1,0 +1,126 @@
+/*Elements*/
+.dot 
+{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: inline-block;
+
+    border-color: rgba(0, 0, 0, 0);
+    transition: border-color 0.3s;
+}
+.dot:hover
+{
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgba(156,157,164,0.23);
+    border-radius: 40px;
+}
+
+/*colors*/
+.bg-light-2
+{
+    background: #FEFEEE;
+}
+
+.text-primary-1
+{
+    color: rgb(18, 147, 170);
+}
+
+.text-primary-2
+{
+    color: rgb(97, 54, 199);
+}
+
+.text-primary-3
+{
+    color: rgb(131, 36, 68);
+}
+
+
+/*badges*/
+.badge-1
+{
+    color: black;
+}
+
+
+/*default*/
+.gradient-1
+{
+    background: rgb(17,52,76);
+    background: linear-gradient(0deg, rgba(17,52,76,1) 0%, rgba(25,28,34,1) 100%);
+}
+
+.gradient-2
+{
+    background: rgb(43,39,77);
+    background: linear-gradient(0deg, rgba(43,39,77,1) 0%, rgba(25,28,34,1) 100%);
+}
+
+.gradient-3
+{
+    background: rgb(61,33,49);
+    background: linear-gradient(0deg, rgba(61,33,49,1) 0%, rgba(25,28,34,1) 100%);
+}
+
+
+/*50% dark*/
+.gradient-1-50
+{
+    background: rgb(17,52,76);
+    background: linear-gradient(0deg, rgba(17,52,76,1) 0%, rgba(25,28,34,1) 50%);
+}
+
+.gradient-2-50
+{
+    background: rgb(43,39,77);
+    background: linear-gradient(0deg, rgba(43,39,77,1) 0%, rgba(25,28,34,1) 50%);
+}
+
+.gradient-3-50
+{
+    background: rgb(61,33,49);
+    background: linear-gradient(0deg, rgba(61,33,49,1) 0%, rgba(25,28,34,1) 50%);
+}
+
+
+/*30% dark*/
+.gradient-1-30
+{
+    background: rgb(17,52,76);
+    background: linear-gradient(0deg, rgba(17,52,76,1) 0%, rgba(25,28,34,1) 30%);
+}
+
+.gradient-2-30
+{
+    background: rgb(43,39,77);
+    background: linear-gradient(0deg, rgba(43,39,77,1) 0%, rgba(25,28,34,1) 30%);
+}
+
+.gradient-3-30
+{
+    background: rgb(61,33,49);
+    background: linear-gradient(0deg, rgba(61,33,49,1) 0%, rgba(25,28,34,1) 30%);
+}
+
+
+/*radial*/
+.circle-gradient-1
+{
+    background: rgb(17,52,76);
+    background: radial-gradient(circle, rgba(17,52,76,1) 0%, rgba(25,28,34,1) 100%);
+}
+
+.circle-gradient-2
+{
+    background: rgb(43,39,77);
+    background: radial-gradient(circle, rgba(43,39,77,1) 0%, rgba(25,28,34,1) 100%);
+}
+
+.circle-gradient-3
+{
+    background: rgb(61,33,49);
+    background: radial-gradient(circle, rgba(61,33,49,1) 0%, rgba(25,28,34,1) 100%);
+}

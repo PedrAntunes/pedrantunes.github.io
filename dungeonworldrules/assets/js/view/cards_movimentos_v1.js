@@ -2,8 +2,29 @@ $(document).ready(function() {
 console.log("Quantidade de movimentos: " + lista_movimento.length);
 console.log(" ");
 
+
+//CONFIGURAÇÕES
+obo = "one-by-one";
+same = "same";
+colorType = same;
+colorIndex = 0;
+colorTotal = 3;
+
+//tipo de titulo
+//0 > titulo semelhante ao dos Movimentos de Dungeon World
+//1 > titulo simplificado
+titleType = 1;
+
+
 for (var i = 0; i < lista_movimento.length; i++) 
 {   
+
+    //gerencia qual cor do CSS vai ser aplicada, se passar da quantidade total de cores do CSS, volta para o index 1
+    colorIndex += 1;
+    if(colorIndex > colorTotal && colorType == "one-by-one");
+        colorIndex = 1;
+
+    //Separa o array em uma varial com nome mais facil de compreender
     movimento = lista_movimento[i];
 
     ///HTML CONTENT
@@ -13,30 +34,45 @@ for (var i = 0; i < lista_movimento.length; i++)
     descricao = movimento[2];
     atributo = movimento[3];
 
-    html_content  = "<div class='col-md-4 my-3'>";
-    html_content += "<div class='bg-secondary rounded p-3 position-relative h-100'>";
+    html_content  = "<div class='col-md-4 my-5'>";
+    html_content += "<div class='bg-light-2 rounded-5 p-3 position-relative h-100 shadow border'>";
     
-    html_content += "<div class='row no-gutters p-3 align-items-center'>";
 
-    html_content += "<div class='col-md-3'><img src='assets/flat-icons/";
-        switch(tipo)
-        {
-            case basic:
-                html_content += "arrow.png";
-                break;
-                case special:
+
+    if(titleType == 0)
+    {
+        html_content += "<div class='row no-gutters p-3 align-items-center'>";
+
+        html_content += "<div class='col-md-3'><img src='assets/flat-icons/";
+            switch(tipo)
+            {
+                case basic:
                     html_content += "arrow.png";
                     break;
-                    case master:
-                        html_content += "magic-book-circle.png";
+                    case special:
+                        html_content += "arrow.png";
                         break;
-        }
-    html_content += "' class='img-fluid' style='max-height: 90px;'></div>";
-    
-    html_content += "<div class='col-md-9 h4 p-0 text-light'>" + titulo + "</div>";
-    html_content += "</div>";
+                        case master:
+                            html_content += "magic-book-circle.png";
+                            break;
+            }
+        html_content += "' class='img-fluid' style='max-height: 90px;'></div>";
+        
+        html_content += "<div class='col-md-9 h4 p-0 text-light'>" + titulo + "</div>";
+        html_content += "</div>";
+    }
 
-    html_content += "<div class='bg-light rounded p-5'>";//card content
+
+    //CARD CONTENT
+    html_content += "<div class='bg-dark gradient-"+colorIndex+"-30 rounded-4 text-white p-5'>";
+
+    
+        //TITULO de tipo 1
+        if(titleType == 1)
+        {      
+            html_content += "<div class='h4 text-primary-1'>" + titulo + "</div>";
+        }
+
 
     if(descricao != "")
     {
