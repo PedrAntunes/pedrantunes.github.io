@@ -15,7 +15,19 @@ function ChangeColor (color_index)
     ShowCards(color_index);
 }
 
-function ShowCards (colorPalleteInt) {
+function InsertParticles(amount = 10)
+{
+    //PARTICLES
+    html_content += '<div id="particle-container">';
+    for(particleI = 0; particleI < amount; particleI++)
+    {
+        html_content += '<div class="particle-'+colorPallete+'"></div>';
+    }
+    html_content += '</div>';
+    //END PARTICLES
+}
+
+function ShowCards (colorPalleteInt = 1) {
     console.log("Quantidade de movimentos: " + lista_movimento.length);
     console.log(" ");
     
@@ -74,9 +86,8 @@ function ShowCards (colorPalleteInt) {
         atributo = movimento[3];
     
         html_content  = "<div class='col-md-4 my-5'>";
-        html_content += "<div class='bg-light-2 rounded-5 p-3 position-relative h-100 shadow border'>";
-        
-    
+        html_content += "<div class='colorPalette hoverColor-"+colorPallete+" bg-light-2 rounded-5 p-3 position-relative h-100 shadow border'>";
+
     
         if(titleType == 0)
         {
@@ -103,16 +114,19 @@ function ShowCards (colorPalleteInt) {
     
     
         //CARD CONTENT
-        html_content += "<div class='colorPallete bg-dark gradient-"+colorIndex+"-30 rounded-4 text-light p-5'>";
+        html_content += "<div class='colorPallete bg-dark gradient-"+colorIndex+"-30 rounded-4 text-light p-5 overflow-hidden w-100 h-100'>";
     
+        //PARTICULAS
+        InsertParticles(8);
+
         
-            //TITULO de tipo 1
-            if(titleType == 1)
-            {      
-                html_content += "<div class='colorPallete h4 text-primary-"+titleColor+"'>" + titulo + "</div>";
-            }
-    
-    
+        //TITULO de tipo 1
+        if(titleType == 1)
+        {      
+            html_content += "<div class='colorPallete h4 text-primary-"+titleColor+"'>" + titulo + "</div>";
+        }
+
+
         if(descricao != "")
         {
             html_content += "<div class='row no-gutters mb-3 align-items-center'>";
@@ -171,7 +185,7 @@ function ShowCards (colorPalleteInt) {
                     for (var escolha = 0; escolha < escolhas.length; escolha++) 
                     {
                         console.log((escolha+1) + ") " + escolhas[escolha]);
-                        html_content += "<p class='small text-light'> <i class='fa-solid fa-caret-right'></i> " + escolhas[escolha] + "</p>";
+                        html_content += "<p class='small text-primary-"+specialTextColor+"'> <i class='fa-solid fa-caret-right'></i> " + escolhas[escolha] + "</p>";
                     }
                 }
             }
@@ -204,7 +218,7 @@ function ShowCards (colorPalleteInt) {
             for (var escolha = 0; escolha < escolhas.length; escolha++) 
             {
                 console.log((escolha+1) + ") " + escolhas[escolha]);
-                html_content += "<p class='small text-secondary'> <i class='fa-solid fa-caret-right'></i> " + escolhas[escolha] + "</p>";
+                html_content += "<p class='small text-primary-"+specialTextColor+"'> <i class='fa-solid fa-caret-right'></i> " + escolhas[escolha] + "</p>";
             }
         }
     

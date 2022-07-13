@@ -45,6 +45,51 @@
     color: black;
 }
 
+/*hover colors*/
+.hoverColor-1, .hoverColor-2, .hoverColor-3
+{
+    transition: all 0.3s ease;
+}
+
+.hoverColor-1:hover
+{
+    background: rgb(17,52,76) !important;
+    border-color: rgb(17,52,76) !important;
+    
+    box-shadow:
+        1px 1px #131414e1,
+        2px 2px #131414e1,
+        3px 3px #131414e1;
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+}
+
+.hoverColor-2:hover
+{
+    background: rgb(43,39,77) !important;
+    border-color: rgb(43,39,77) !important;
+    
+    box-shadow:
+        1px 1px #131414e1,
+        2px 2px #131414e1,
+        3px 3px #131414e1;
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+}
+
+.hoverColor-3:hover
+{
+    background: rgb(61,33,49) !important;
+    border-color: rgb(61,33,49) !important;
+    
+    box-shadow:
+        1px 1px #131414e1,
+        2px 2px #131414e1,
+        3px 3px #131414e1;
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+}
+
 
 /*default*/
 .gradient-1
