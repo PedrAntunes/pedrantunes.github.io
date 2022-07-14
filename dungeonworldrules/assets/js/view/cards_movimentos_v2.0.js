@@ -2,6 +2,7 @@
 $(document).ready()
 {
     ShowCards(1);
+    TurnOnParticles(1);
 };
 
 function HideCards()
@@ -9,25 +10,18 @@ function HideCards()
     $("#movement-list").empty();
 }
 
+//change page color
 function ChangeColor (color_index) 
 {
+    TurnOffParticles();
     HideCards();
+
     ShowCards(color_index);
+    TurnOnParticles(color_index);
 }
 
-function InsertParticles(amount = 10)
+function ShowCards (colorPalleteInt = 1) 
 {
-    //PARTICLES
-    html_content += '<div id="particle-container">';
-    for(particleI = 0; particleI < amount; particleI++)
-    {
-        html_content += '<div class="particle-'+colorPallete+'"></div>';
-    }
-    html_content += '</div>';
-    //END PARTICLES
-}
-
-function ShowCards (colorPalleteInt = 1) {
     console.log("Quantidade de movimentos: " + lista_movimento.length);
     console.log(" ");
     
@@ -84,7 +78,7 @@ function ShowCards (colorPalleteInt = 1) {
         tipo = movimento[1];
         descricao = movimento[2];
         atributo = movimento[3];
-    
+
         html_content  = "<div class='col-md-4 my-5'>";
         html_content += "<div class='colorPalette hoverColor-"+colorPallete+" bg-light-2 rounded-5 p-3 position-relative h-100 shadow border'>";
 
@@ -115,9 +109,6 @@ function ShowCards (colorPalleteInt = 1) {
     
         //CARD CONTENT
         html_content += "<div class='colorPallete bg-dark gradient-"+colorIndex+"-30 rounded-4 text-light p-5 overflow-hidden w-100 h-100'>";
-    
-        //PARTICULAS
-        InsertParticles(8);
 
         
         //TITULO de tipo 1
@@ -234,4 +225,4 @@ function ShowCards (colorPalleteInt = 1) {
     
         $("#movement-list").append(html_content);
     }
-    }
+}

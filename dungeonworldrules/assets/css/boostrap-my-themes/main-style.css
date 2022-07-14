@@ -1,3 +1,8 @@
+body
+{
+    overflow-x: hidden;
+}
+
 /*Elements*/
 .dot 
 {
@@ -168,4 +173,13 @@
 {
     background: rgb(61,33,49);
     background: radial-gradient(circle, rgba(61,33,49,1) 0%, rgba(25,28,34,1) 100%);
+}
+
+
+/*particle test*/
+.ball 
+{
+    position: absolute;
+    border-radius: 100%;
+    opacity: 0.7;
 }
