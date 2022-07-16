@@ -1,0 +1,145 @@
+/*CALISTOGA*/
+@font-face 
+{
+    font-family: Calistoga;
+    src: url("../fonts/Calistoga/Calistoga-Regular.ttf");
+}
+
+.calistoga
+{
+    font-family: Calistoga !important;
+}
+
+/*CinzelDecorative*/
+@font-face 
+{
+    font-family: CinzelDecorative;
+    src: url("../fonts/Cinzel_Decorative/CinzelDecorative-Regular.ttf");
+}
+
+@font-face 
+{
+    font-family: CinzelDecorativeBold;
+    src: url("../fonts/Cinzel_Decorative/CinzelDecorative-Bold.ttf");
+}
+
+@font-face 
+{
+    font-family: CinzelDecorativeBlack;
+    src: url("../fonts/Cinzel_Decorative/CinzelDecorative-Black.ttf");
+}
+
+.cinzelDecorative
+{
+    font-family: CinzelDecorative !important;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.cinzelDecorative-bold
+{
+    font-family: CinzelDecorativeBold !important;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.cinzelDecorative-bolder
+{
+    font-family: CinzelDecorativeBlack !important;
+    font-weight: bolder;
+    font-style: normal;
+}
+
+
+
+/*SansitaSwashed*/
+@font-face 
+{
+    font-family: SansitaSwashed-Light;
+    src: url("../fonts/Sansita_Swashed/SansitaSwashed-Light.ttf");
+}
+@font-face 
+{
+    font-family: SansitaSwashed-Regular;
+    src: url("../fonts/Sansita_Swashed/SansitaSwashed-Regular.ttf");
+}
+@font-face 
+{
+    font-family: SansitaSwashed-Bold;
+    src: url("../fonts/Sansita_Swashed/SansitaSwashed-Bold.ttf");
+}
+@font-face 
+{
+    font-family: SansitaSwashed-Black;
+    src: url("../fonts/Sansita_Swashed/SansitaSwashed-Black.ttf");
+}
+
+.sansitaSwashed-light
+{
+    font-family: SansitaSwashed-Light !important;
+    font-weight: lighter;
+    font-style: normal;
+}
+
+.sansitaSwashed
+{
+    font-family: SansitaSwashed-Regular !important;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.sansitaSwashed-bold
+{
+    font-family: SansitaSwashed-Bold !important;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.sansitaSwashed-black
+{
+    font-family: SansitaSwashed-Black !important;
+    font-weight: bolder;
+    font-style: normal;
+}
+
+
+
+/*PT SERIF*/
+@font-face 
+{
+    font-family: PTSerif-Regular;
+    src: url("../fonts/PT_Serif/PTSerif-Regular.ttf");
+}
+@font-face 
+{
+    font-family: PTSerif-bold;
+    src: url("../fonts/PT_Serif/PTSerif-Bold.ttf");
+}
+
+.ptserif
+{
+    font-family: PTSerif-Regular !important;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.ptserif-bold
+{
+    font-family: PTSerif-Bold !important;
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+
+
+
+
+
+/*-------APLICAÇÃO DE FONTE-------*/
+body, .text-small
+{
+    font-family: PTSerif-Regular !important;
+    font-weight: normal;
+    font-style: normal;
+}
