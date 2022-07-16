@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="pt-br">
+        
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Dungeon World - Regras do nosso RPG</title>
+
+        <!--CORE-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        
+        <!--CUSTOM THEMES-->
+        <link href="assets/css/boostrap-my-themes/bootstrap-my-theme-1.min.css" rel="stylesheet">
+        <link href="assets/css/boostrap-my-themes/main-style.css" rel="stylesheet">
+        <link href="assets/css/custom_scrollbar.css" rel="stylesheet">
+        <link href="assets/css/fonts.css" rel="stylesheet">
+
+        <!--ASSETS-->
+        <link href="assets/fontawesome-6.1.1/css/all.min.css" rel="stylesheet">
+    </head>
+
+    <body class="bg-dark gradient-1-30 h-100">
+
+        <!---navbar--->
+        <nav id="navbar" class="navbar navbar-expand-lg bg-primary fixed-top">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+            
+                        <li class="nav-item">
+                            <a id="home" class="nav-link text-light active" aria-current="page" href="index.html">Regras</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a id="lista_movimentos" class="nav-link text-light" aria-current="page" href="lista_movimentos.html">Lista de Movimentos</a>
+                        </li>
+            
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <!---LISTA DE MOVIMENTOS--->
+        <div class="container">
+            
+            <div id="particle-box"></div>
+
+            <!--color system-->
+            <div id="color-system" class="d-flex alin-content-center text-light mt-3">
+                <span class="mr-1 text-secondary">Color:</span>
+                <a onClick="ChangeColor(1)" class="mx-1"><span class="dot gradient-1"></span></a>
+                <a onClick="ChangeColor(2)" class="mx-1"><span class="dot gradient-2"></span></a>
+                <a onClick="ChangeColor(3)" class="mx-1"><span class="dot gradient-3"></span></a>
+            </div>
+
+            <!--card content-->
+            <div id="movement-list" class="row">
+            </div>
+        </div>
+        <!---FIM LISTA DE MOVIMENTOS--->
+
+
+        <!---CORE--->
+        <script src="assets/jquery/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+        <!---LISTA DE MOVIMENTOS--->
+        <script src="assets/js/view/particle_system.js"></script>
+        <script src="assets/js/array_movimentos.js"></script>
+        <script src="assets/js/view/cards_movimentos_v2.0.js"></script>
+
+        <!--PAGES MANAGER-->
+        <!--script src="assets/js/navbar_manager.js"></script-->
+</body>
+</html>

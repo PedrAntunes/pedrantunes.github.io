@@ -1,0 +1,651 @@
+<!doctype html>
+<html lang="pt-br">
+        
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Dungeon World - Regras do nosso RPG</title>
+
+        <!--CORE-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        
+        <!--CUSTOM THEMES-->
+        <link href="assets/css/boostrap-my-themes/bootstrap-my-theme-1.min.css" rel="stylesheet">
+        <link href="assets/css/boostrap-my-themes/main-style.css" rel="stylesheet">
+        <link href="assets/css/custom_scrollbar.css" rel="stylesheet">
+        <link href="assets/css/fonts.css" rel="stylesheet">
+
+        <!--ASSETS-->
+        <link href="assets/fontawesome-6.1.1/css/all.min.css" rel="stylesheet">
+    </head>
+
+    <body class="bg-dark gradient-1-30 h-100">
+
+        <!---navbar--->
+        <nav id="navbar" class="navbar navbar-expand-lg bg-primary fixed-top">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+            
+                        <li class="nav-item">
+                            <a id="home" class="nav-link text-light active" aria-current="page" href="index.html">Regras</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a id="lista_movimentos" class="nav-link text-light" aria-current="page" href="lista_movimentos.html">Lista de Movimentos</a>
+                        </li>
+            
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <!---GET PAGINA--->
+        <section id="get-pag" class="mt-5"></section>
+
+
+        <!---particles--->
+        <div id="particle-box"></div>
+
+        
+        <!---HOME PAGE--->
+        <section id="home">
+            <!--TITULO-->
+            <div class="bg-primary-1">
+                <div class="main-banner d-flex align-items-center">
+                    <div class="mx-auto">
+                        <h1 class="text-light cinzelDecorative-bold">
+                            The Fall of Kingdoms
+                        </h1>
+                        <!--img src="assets/flat-icons/sword.png" class="main-icon icon-color-1"-->
+                    </div>
+                </div>
+            </div>
+            <!--FIM TITULO-->
+            
+            <!--CONTENT-->
+            <div class="container">
+
+                <!--SISTEMA-->
+                <div class="section-separation text-center">
+                    <div class="section-separation">
+                        <h1 class="text-primary-1 cinzelDecorative-bold">O Sitema</h1>
+                        <p class="text-light">
+                            Dungeon World pode ser visto como uma adaptação mais simplificada e direta
+                            de Dungeons & Dragons (D&D). Seu foco é o Roleplay e suas regras secundárias na aventura, 
+                            servindo apenas como apoio para a construção de uma história épica.
+                        </p>
+                    </div>
+
+                    <div class="section-separation">
+                        <h2 class="text-primary-1 cinzelDecorative-bold mt-5">Rolagem de dados</h2>
+                        <p class="text-light">
+                            A rolagem de dados só é necessária para ações que o MJ julgar relevante. Ações que podem 
+                            mudar o rumo dos acontecimentos e tornar o jogo mais interessante e desafiador. 
+                            Se for uma situação tensa, você rolará os dados para testar e realizar um Movimento.
+                        </p>
+                    </div>
+
+                    <div class="section-separation">
+                        <h2 class="text-primary-1 cinzelDecorative-bold mt-5">Movimentos</h2>
+                        <p class="text-light">
+                            Todas as ações em Dungeon World são Movimentos. E cada Movimento precisa de uma rolagem 
+                            de dados para verificar se os personagens tem êxito nas ações que realizarem. Movimentos podem
+                            ser realizados com perfeição, mas também podem resultar em falhas críticas. 
+                        </p>
+                        <p class="text-light">
+                            Resultados para cada rolagem de dados ao realizar um Movimento:
+                        </p>
+                        <div class="py-3">
+                            <div class="bg-primary-1 hoverColor-1 rounded-3 p-1 mt-1">
+                                <div class="rounded-3 text-light p-1">
+                                    <p class="p-0 m-1"><span class="badge bg-secondary me-2">-6</span> Falha ou falha crítica, mas ganha +1 de XP.</p>
+                                </div>
+                            </div>
+                            <div class="bg-primary-1 hoverColor-1 rounded-3 p-1 mt-1">
+                                <div class="rounded-3 text-light p-1">
+                                    <p class="p-0 m-1"><span class="badge bg-secondary me-2">7-9</span> Consegue, mas com alguma consequência.</p>
+                                </div>
+                            </div>
+                            <div class="bg-primary-1 hoverColor-1 rounded-3 p-1 mt-1">
+                                <div class="rounded-3 text-light p-1">
+                                    <p class="p-0 m-1"><span class="badge bg-secondary me-2">10+</span> Êxito, talvez perfeitamente.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-secondary">
+                            <a class="text-secondary btn btn-outline-light" href="lista_movimentos.html">Veja as Cartas de Movimentos</a>
+                        </p>
+                    </div>
+                </div>
+                <!--FIM SISTEMA-->
+
+                <!--PERSONAGEM-->
+                <div class="section-separation text-center">
+                    <div class="section-separation">
+                        <h1 class="text-primary-1 cinzelDecorative-bold">Criando Personagens</h1>
+                        <p class="text-light mt-5">
+                            <span class="fw-bolder text-primary-1 sansitaSwashed-light">Classes:</span> <br> Movimentos Especiais de Classe, equipamentos iniciais, dados de dano, 
+                            PV iniciais, e capacidade de carga.
+                        </p>
+                        <p class="text-light mt-5">
+                            <span class="fw-bolder text-primary-1 sansitaSwashed-light">Raças:</span> <br> podem ter Movimentos Especiais ou bonus de 
+                            atributos, o que contribuem para o estilo de jogo e rolagens de dados.
+                        </p>
+                        <p class="text-light mt-5">
+                            <span class="fw-bolder text-primary-1 sansitaSwashed-light">Nome e Aparência:</span> <br> não possuiem fator mecanico, mas para um sistema 
+                            que presa o roleplay acima das regras, é de fundamental importância 
+                            para a qualidade da história. Alguns nomes e caracteristicas são 
+                            sugeridos em cada ficha de personagem, o que pode ajudar em uma aventura rápida ou
+                            contribuir para novas ideias.
+                        </p>
+                    </div>
+                </div>
+                <!--FIM PERSONAGEM-->
+
+                <!--PERSONAGEM-->
+                <div class="section-separation text-center">
+                    <div class="section-separation">
+                        <h2 class="text-primary-1 cinzelDecorative-bold">Caracteristicas<br>Atributos</h2>
+                        
+                        <div class="py-3">
+                            <div class="bg-primary-1 hoverColor-1 rounded-3 p-1 mt-1">
+                                <div class="rounded-3 text-light p-1">
+                                    <p class="p-0 m-1">Força (FOR)</p>
+                                </div>
+                            </div>
+                            <div class="bg-primary-1 hoverColor-1 rounded-3 p-1 mt-1">
+                                <div class="rounded-3 text-light p-1">
+                                    <p class="p-0 m-1">Destreza (DES)</p>
+                                </div>
+                            </div>
+                            <div class="bg-primary-1 hoverColor-1 rounded-3 p-1 mt-1">
+                                <div class="rounded-3 text-light p-1">
+                                    <p class="p-0 m-1">Constituição (CON)</p>
+                                </div>
+                            </div>
+                            <div class="bg-primary-1 hoverColor-1 rounded-3 p-1 mt-1">
+                                <div class="rounded-3 text-light p-1">
+                                    <p class="p-0 m-1">Inteligência (INT)</p>
+                                </div>
+                            </div>
+                            <div class="bg-primary-1 hoverColor-1 rounded-3 p-1 mt-1">
+                                <div class="rounded-3 text-light p-1">
+                                    <p class="p-0 m-1">Sabedoria (SAB)</p>
+                                </div>
+                            </div>
+                            <div class="bg-primary-1 hoverColor-1 rounded-3 p-1 mt-1">
+                                <div class="rounded-3 text-light p-1">
+                                    <p class="p-0 m-1">Carisma (CAR)</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="text-light mt-5">
+                            Ao criar um personagem é necessário distribuir os seguindos valores pelos atributos:
+                        </p>
+                        <div class="bg-primary-1 p-3 rounded-3">
+                            <span class="badge bg-secondary">16</span>
+                            <span class="badge bg-secondary">15</span>
+                            <span class="badge bg-secondary">13</span>
+                            <span class="badge bg-secondary">12</span>
+                            <span class="badge bg-secondary">9</span>
+                            <span class="badge bg-secondary">8</span>
+                        </div>
+                        <p class="text-light mt-4">
+                            Foque nas caracteristicas que você pretende usar mais durante a aventura e que 
+                            mais sejam compativeis com o personagem que você pretende criar. Além disso, pense em qual o seu modo de jogo. 
+                        </p>
+                    </div>
+                </div>
+                <!--FIM PERSONAGEM-->
+
+                
+                <!--MODIFICADORES-->
+                <div class="section-separation text-center">
+                    <div class="section-separation">
+                        <h3 class="text-primary-1 mt-3 cinzelDecorative-bold">
+                            Modificadores
+                        </h3>
+                        <p class="text-light">
+                            Cada valor de caracteristica tem um Valor Modificador.
+                            Quando o Movimento pedir uma rolagem de +caracteristica, some seu Modificador no resultado da rolagem.
+                        </p>                        
+                    </div>
+                    <div class="mt-3">
+                        <div class="rounded-4 p-3 bg-light mx-auto mt-3 mb-5">
+                            <div class="rounded-3 bg-dark text-light">
+                                <div class="bg-primary-1 rounded-top p-2 cinzelDecorative-bold">
+                                    <div class="row">
+                                        <div class="col-6">Caracteristicas:</div>
+                                        <div class="col-6">Modificador:</div>
+                                    </div>
+                                </div>
+                                <div class="bg-dark rounded-top p-2">
+                                    <div class="row">
+                                        <div class="col-6">1 – 3</div>
+                                        <div class="col-6">-3</div>
+                                    </div>
+                                </div>
+                                <div class="bg-darker rounded-top p-2">
+                                    <div class="row">
+                                        <div class="col-6">4 – 5</div>
+                                        <div class="col-6">-2</div>
+                                    </div>
+                                </div>
+                                <div class="bg-dark rounded-top p-2">
+                                    <div class="row">
+                                        <div class="col-6">6 – 8</div>
+                                        <div class="col-6">-1</div>
+                                    </div>
+                                </div>
+                                <div class="bg-darker rounded-top p-2">
+                                    <div class="row">
+                                        <div class="col-6">9 – 12</div>
+                                        <div class="col-6">0</div>
+                                    </div>
+                                </div>
+                                <div class="bg-dark rounded-top p-2">
+                                    <div class="row">
+                                        <div class="col-6">13 – 15</div>
+                                        <div class="col-6">+1</div>
+                                    </div>
+                                </div>
+                                <div class="bg-darker rounded-top p-2">
+                                    <div class="row">
+                                        <div class="col-6">16 – 17</div>
+                                        <div class="col-6">+2</div>
+                                    </div>
+                                </div>
+                                <div class="bg-dark rounded-bottom p-2">
+                                    <div class="row">
+                                        <div class="col-6">18</div>
+                                        <div class="col-6">+3</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mx-auto">
+                        <p class="text-light border rounded-4 p-5">
+                            <span class="fw-bolder text-primary-1 sansitaSwashed-light">Pontos de Vida (PV)</span> 
+                            <br> 
+                            <span class="fw-bolder text-primary-1 sansitaSwashed-light">-</span> 
+                            <br>
+                            O valor inicial de seus PV são dados pela sua classe somado 
+                            com sua caracteristica (também dado pela sua classe), mas sem o Modificador.
+                        </p>
+                        
+                        <p class="text-light mt-5 border rounded-4 p-5">
+                            <span class="fw-bolder text-primary-1 sansitaSwashed-light">Equipamentos inicais</span>
+                            <br> 
+                            <span class="fw-bolder text-primary-1 sansitaSwashed-light">-</span> 
+                            <br>
+                            Cada classe tem uma lista de itens e equipamentos que podem ser esolhidos para
+                            se ter no começo da aventura.
+                        </p>
+                        
+                        <p class="text-light mt-5 border rounded-4 p-5">
+                            <span class="fw-bolder text-primary-1 sansitaSwashed-light">Movimentos de Classe</span> 
+                            <br> 
+                            <span class="fw-bolder text-primary-1 sansitaSwashed-light">-</span> 
+                            <br>
+                            "Existem muitos tipos de guerreiros e magos. Você deve escolher qual 
+                            tipo de personagem quer ser".
+                        </p>
+                        
+                        <p class="text-light mt-5 border rounded-4 p-5">
+                            <span class="fw-bolder text-primary-1 sansitaSwashed-light">Vinculos</span> 
+                            <br> 
+                            <span class="fw-bolder text-primary-1 sansitaSwashed-light">-</span> 
+                            <br>
+                            Cada vínculo é uma afirmativa simples que relaciona seu personagem a algum outro 
+                            personagem jogador. Sua classe lhe oferece alguns com os quais começar, mas você acabará 
+                            trocando e criando outros na medida em que o jogo avançar.
+                        </p>
+    
+                        <p class="text-light mt-5 border rounded-4 p-5">
+                            <span class="fw-bolder text-primary-1 sansitaSwashed-light">Alinhamento</span> 
+                            <br> 
+                            <span class="fw-bolder text-primary-1 sansitaSwashed-light">-</span> 
+                            <br>
+                            Cada classe oferece alguns alinhamentos predefinidos. Mas é possivel criar alinhamentos proprios
+                            que se encaixe no universo e no personagem.
+                        </p>
+                    </div>
+                </div>
+                <!--FIM MODIFICADORES-->
+
+                <!--ALINHAMENTOS-->
+                <div class="section-separation text-center">
+                    <div class="section-separation">
+                        <h2 class="text-primary-1 cinzelDecorative-bold">Tabela de Alinhamentos</h2>
+                        
+                        <div class="container-fluid mt-5">
+                            <!--ROW-->
+                            <div class="row sansitaSwashed">
+                                <div class="col-md-4 p-3">
+                                    <div class="rounded-3 bg-light p-2 h-100">
+                                        <div class="rounded-3 gradient-1-30 text-primary-1 p-3 h-100">
+                                            <h5 class="text-primary-1 cinzelDecorative-bolder my-3">Ordeiro e Bom</h5>
+                                            <div id="style-1" class="colorPallete d-flex overflow-auto px-3" style="max-height: 500px">
+                                                <p class="text-light card-p">
+                                                    Um personagem ordeiro e bom age tipicamente com compaixão e sempre com honra e 
+                                                    senso de dever. Porém, personagens ordeiros e bons vão se arrepender ao fazerem 
+                                                    qualquer ação que acreditem conflitar com o seu código, mesmo que em prol do bem maior. 
+                                                    Estes personagens incluem nobres cavaleiros, paladinos e muitos anões. Criaturas 
+                                                    ordeiras e boas incluem dragões dourados.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                <div class="col-md-4 p-3">
+                                    <div class="rounded-3 bg-light p-2 h-100">
+                                        <div class="rounded-3 gradient-1-30 text-primary-1 p-3 h-100">
+                                            <h5 class="text-primary-1 cinzelDecorative-bolder my-3">Neutro e Bom</h5>
+                                            <div id="style-1" class="colorPallete d-flex overflow-auto px-3" style="max-height: 500px">
+                                                <p class="text-light card-p">
+                                                    Um personagem neutro e bom age tipicamente de forma altruísta, sem se importar com 
+                                                    os decretos de leis, regras comunitárias e tradições. Um personagem neutro e bom não 
+                                                    vê problemas ao cooperar com os oficiais da lei, mas não se veem presos a eles. Caso 
+                                                    a oportunidade de fazer o bem exija distorcer ou violar as regras, eles não sofrem o 
+                                                    mesmo conflito interno que os personagens ordeiros e bons.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                <div class="col-md-4 p-3">
+                                    <div class="rounded-3 bg-light p-2 h-100">
+                                        <div class="rounded-3 gradient-1-30 text-primary-1 p-3 h-100">
+                                            <h5 class="text-primary-1 cinzelDecorative-bolder my-3">Caótico e Bom</h5>
+                                            <div id="style-1" class="colorPallete d-flex overflow-auto px-3" style="max-height: 500px">
+                                                <p class="text-light card-p">
+                                                    Um personagem caótico e bom faz o que for necessário para mudar as coisas para melhor, 
+                                                    desdenha as organizações burocráticas que impedem as melhorias sociais e valorizam 
+                                                    demais a liberdade individual, não apenas para si mesmo, mas para todas as pessoas. 
+                                                    Personagens caóticos e bons geralmente possuem boas intenções, mas seus métodos são 
+                                                    desorganizados e, frequentemente, destoam do restante da sociedade.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                <div class="col-md-4 p-3">
+                                    <div class="rounded-3 bg-light p-2 h-100">
+                                        <div class="rounded-3 gradient-1-30 text-primary-1 p-3 h-100">
+                                            <h5 class="text-primary-1 cinzelDecorative-bolder my-3">Ordeiro e Neutro</h5>
+                                            <div id="style-1" class="colorPallete d-flex overflow-auto px-3" style="max-height: 500px">
+                                                <p class="text-light card-p">
+                                                    Um personagem ordeiro e neutro tipicamente acredita fortemente no espírito das leis 
+                                                    como a honra, a ordem, as regras e as tradições, mas geralmente seguem um código pessoal 
+                                                    em adição a, ou mesmo preferindo a, algum código determinado por uma autoridade 
+                                                    benevolente. Exemplos de personagens ordeiros e neutros incluem um soldado que sempre 
+                                                    segue ordens, um juiz ou um oficial que adere impiedosamente à lei literal, 
+                                                    e um monge disciplinado.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                <div class="col-md-4 p-3">
+                                    <div class="rounded-3 bg-light p-2 h-100">
+                                        <div class="rounded-3 gradient-1-30 text-primary-1 p-3 h-100">
+                                            <h5 class="text-primary-1 cinzelDecorative-bolder my-3">Neutro</h5>
+                                            <div id="style-1" class="colorPallete d-flex overflow-auto px-3" style="max-height: 500px">
+                                                <p class="text-light card-p">
+                                                    Um personagem neutro (também chamado de “true neutral” ou neutro verdadeiro) é 
+                                                    neutro nos dois extremos e não se sente fortemente inclinado a nenhum alinhamento 
+                                                    e nem ativamente trabalha em prol do equilíbrio deles. Os druidas frequentemente 
+                                                    seguem este caminho em prol do equilíbrio.
+                                                    <br><br>
+                                                    <span class="text-primary-1">
+                                                        Um druida típico poderia lutar contra um grupo de gnolls assassinos apenas para depois 
+                                                        mudar de lado e salvar este mesmo grupo da extinção completa.
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                <div class="col-md-4 p-3">
+                                    <div class="rounded-3 bg-light p-2 h-100">
+                                        <div class="rounded-3 gradient-1-30 text-primary-1 p-3 h-100">
+                                            <h5 class="text-primary-1 cinzelDecorative-bolder my-3">Caótico Neutro</h5>
+                                            <div id="style-1" class="colorPallete d-flex overflow-auto px-3" style="max-height: 500px">
+                                                <p class="text-light card-p">
+                                                    Um personagem caótico e neutro é um individualista que segue apenas a sua própria 
+                                                    vontade e geralmente não se importa com as regras e nem com as tradições. 
+                                                    Embora os personagens caóticos e neutros promovam os ideais de liberdade, 
+                                                    é a sua liberdade individual que vem em primeiro lugar, bem e mal ficam em segundo 
+                                                    plano em relação a sua necessidade de se sentirem livres.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                <div class="col-md-4 p-3">
+                                    <div class="rounded-3 bg-light p-2 h-100">
+                                        <div class="rounded-3 gradient-1-30 text-primary-1 p-3 h-100">
+                                            <h5 class="text-primary-1 cinzelDecorative-bolder my-3">Ordeiro Mau</h5>
+                                            <div id="style-1" class="colorPallete d-flex overflow-auto px-3" style="max-height: 500px">
+                                                <p class="text-light card-p">
+                                                    Um personagem ordeiro e mau vê um sistema bem ordenado como sendo mais fácil de explorar 
+                                                    do que de seguir. Exemplos deste alinhamento inclui tiranos, diabos, 
+                                                    oficiais corruptos e mercenários que seguem um código de conduta restrito.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                <div class="col-md-4 p-3">
+                                    <div class="rounded-3 bg-light p-2 h-100">
+                                        <div class="rounded-3 gradient-1-30 text-primary-1 p-3 h-100">
+                                            <h5 class="text-primary-1 cinzelDecorative-bolder my-3">Neutro Mau</h5>
+                                            <div id="style-1" class="colorPallete d-flex overflow-auto px-3" style="max-height: 500px">
+                                                <p class="text-light card-p">
+                                                    Um personagem neutro e mal é egoísta e não possui nenhuma ressalva em se voltar contra seus 
+                                                    aliados. Eles geralmente buscam aliados para avançar em seus objetivos pessoais. 
+                                                    Um personagem neutro e mal não sente nenhuma culpa em ferir outras pessoas para conseguirem 
+                                                    o que quer, mas não busca promover a carnificina ou destruição quando isso não lhe trouxer 
+                                                    um benefício direto. Uma outra interpretação válida do neutro e mal é ver o mal como um ideal, 
+                                                    espalhando o mal pelo mal, apenas para aumentar a influência do mesmo.
+                                                    <br><br>
+                                                    <span class="text-primary-1">
+                                                        Exemplos do primeiro 
+                                                        tipo são ser um assassino que não se importa com as leis, mas não mata apenas por matar, 
+                                                        um lacaio que planeja um golpe pelas costas de seu líder ou um mercenário que muda de lado 
+                                                        ao receber uma oferta melhor. Um exemplo do segundo tipo seria um assassino mascarado que 
+                                                        mata por matar só para causar medo e desconfiança na comunidade.
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                <div class="col-md-4 p-3">
+                                    <div class="rounded-3 bg-light p-2 h-100">
+                                        <div class="rounded-3 gradient-1-30 text-primary-1 p-3 h-100">
+                                            <h5 class="text-primary-1 cinzelDecorative-bolder my-3">Caótico Mau</h5>
+                                            <div id="style-1" class="colorPallete d-flex overflow-auto px-3" style="max-height: 500px">
+                                                <p class="text-light card-p">
+                                                    Um personagem caótico e mal não respeita regras, a vida de terceiros ou qualquer coisa além de 
+                                                    seus próprios desejos, que são geralmente egoístas e cruéis. Eles supervalorizam a liberdade individual, 
+                                                    mas não se importam com as vidas ou com a liberdade de terceiros. Os personagens caóticos e maus não 
+                                                    funcionam bem em grupos pois odeiam receber ordens e, geralmente, não se comportam bem a não ser que 
+                                                    não tenham outra alternativa. Exemplos deste alinhamento incluem a maioria dos mortos-vivos mais 
+                                                    poderosos, como os liches e os assassinos violentos que matam por prazer e não por ganho pessoal.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Fim row-->
+                        </div>
+                    </div>
+                </div>
+                <!--FIM ALINHAMENTOS-->
+
+
+                <!--EVOLUINDO PERSONAGENS-->
+                <div class="section-separation text-center">
+                    <h1 class="text-primary-1 cinzelDecorative-bold">
+                        Evoluindo personagens
+                    </h1>
+                    
+                    <div class="mt-5">
+                        <div class="border p-5 rounded-4">
+                            <p class="text-primary-1 mt-5">
+                                No final de cada Sessão (ou Atos/Capítulos da História) os jogadores respondem essas
+                                perguntas e ganham +1XP para cada "sim":
+                            </p>
+
+                            <p class="text-light">
+                                1. Aprendemos algo novo sobre o mundo?
+                                <br>
+                                2. Derrotamos algum inimigo notavel?
+                                <br>
+                                3. Saqueamos algum tesouro memoravel?
+                            </p>
+                        </div>
+
+                        <div class="border p-5 rounded-4 mt-5">
+                            <p class="text-primary-1">
+                                Outras fontes de XP:
+                            </p>
+
+                            <p class="text-light">
+                                Agir de acordo com o alinhamento do personagem (+1XP);
+                                <br>
+                                Resolver Vinculos (+1XP);
+                                <br>
+                                Tirar -6 nas rolagens de Movimentos (+1XP);
+                                <br>
+                                Ficar dias ou horas fora de atividade refletindo sobre a vida e sobre as ultimas experiencias da aventura (+1XP).
+                            </p>
+                        </div>
+
+                        <div class="border p-5 rounded-4 mt-5">
+                            <p class="text-primary-1">
+                                Para subir de nível é necessário o valor de 7XP + seu nivel atual.
+                            </p>
+
+                            <p class="text-light mt-5">
+                                Ao subir de nível, essas etapas ocorrem:
+                            </p>
+                            <p class="text-light mt-5">
+                                1. Subtraia 7 + seu nível atual do seu XP acumulado;
+                                <br>
+                                2. Escolha um novo Movimento de Classe da ficha de seu personagem;
+                                <br>
+                                3. Some +1 ao seu nível;
+                                <br>
+                                4. Se seu personagem for um mago, aprenda mais uma magia de sua ficha;
+                                <br>
+                                5. Escolha uma caracteristica (atributo) do personagem e acrescente +1 a ela. Isso pode mudar o Modificador da sua Caracteristica e/ou aumentar seus PV. O resultado não pode passar de 18. 
+                            </p>
+                            <p class="text-light mt-5">
+                                Quando um personagem pega nível 10, ele abandora a carreira de aventureiro e o jogador cria um novo personagem nível 1 para entrar na história (não vamos usar isso).
+                                Com a permissão do MJ, o jogador pode criar um novo Movimento de Classe para sua classe.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!--FIM EVOLUINDO PERSONAGENS-->
+
+                <!--ROTULOS-->
+                <div class="section-separation text-center">
+                    <h1 class="text-primary-1 cinzelDecorative-bold">
+                        Rótulos
+                    </h1>
+                    <div class="border p-5 rounded-4 mt-5">
+                        <p class="text-light">
+                            Os rótulos ajudam os jogadores a se manter na ficção e deixam a história mais épica. 
+                        </p>                    
+                        <p class="text-light">
+                            Exemplos de rótulos:
+                        </p>
+                        <p class="text-primary-1">
+                            Um martelo <span class="fw-bold">gigante e pesado</span> derruba os inimigos sempre que é usado para atacar.
+                            <br>
+                            Uma espada <span class="fw-bold">sagrada</span> faz luzes aparecerem quando se ataca criaturas das trevas.
+                        </p>
+                    </div>
+                </div>
+                <!--FIM ROTULOS-->
+
+            </div>
+            <!--FIM CONTENT-->
+
+            
+            <!--Espaçamento no final-->
+            <div class="bg-primary-1 p-5 section-separation"></div>
+            <div class="bg-primary-1 p-5"></div>
+            <!--FIM Espaçamento no final-->
+        </section>
+        <!---FIM HOME PAGE--->
+
+
+        <!---CORE--->
+        <script src="assets/jquery/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+        <!--PAGES MANAGER-->
+        <!--script src="assets/js/navbar_manager.js"></script-->
+        
+        <!--Particle system-->
+        <script src="assets/js/view/particle_system.js"></script>
+        <script>
+            $(document).ready(function(){
+                TurnOnParticles(paletteIndex = 1);
+            });
+        </script>
+    </body>
+</html>
+
+
+
+
+<!--
+
+card color reference:
+https://dribbble.com/shots/8978860-RPG-Swords-Cards
+
+effects on hover reference:
+https://template.hasthemes.com/andle/andle/pricing.html
+https://template.hasthemes.com/andle/andle/index.html
+
+paint png
+https://codepen.io/sosuke/pen/Pjoqqp
+
+icons
+https://www.flaticon.com/packs/role-playing-game-1
+
+Wood texture
+https://dribbble.com/shots/16293314-D-D-Basic-Rules-Site-Concept
+
+https://www.freepik.com/free-vector/topographic-contour-lines-map-seamless-pattern_13381541.htm#query=line%20texture&position=1&from_view=keyword
+https://www.freepik.com/free-vector/monochrome-abstract-contour-line-illustration_3782124.htm#query=line%20texture&position=2&from_view=keyword
+https://www.freepik.com/premium-vector/pattern-geometric-line-circle-abstract-seamless-blue-line_4332971.htm#query=line%20texture&position=20&from_view=keyword
+https://www.freepik.es/vector-gratis/ilustracion-abstracta-monocromatica-linea-contorno_3782123.htm
+https://www.google.com/search?q=Wood+Lines+Textures+Vector&rlz=1C1ISCS_pt-PTBR998BR998&sxsrf=ALiCzsZMikRU1Pf8SaPAIK7oO8wCNFARHw:1657931085117&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiTu4_Lkvz4AhUDpZUCHWNIBUQQ_AUoAXoECAEQAw&biw=1920&bih=880&dpr=1
+https://www.vecteezy.com/vector-art/164756-woodgrain-texture-pattern
+
+
+-->
